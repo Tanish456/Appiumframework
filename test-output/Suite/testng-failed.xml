@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="resource.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="frame.Test_case1">
+        <methods>
+          <include name="tc2"/>
+        </methods>
+      </class> <!-- frame.Test_case1 -->
+      <class name="frame.Test_case">
+        <methods>
+          <include name="bt"/>
+          <include name="app"/>
+        </methods>
+      </class> <!-- frame.Test_case -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
